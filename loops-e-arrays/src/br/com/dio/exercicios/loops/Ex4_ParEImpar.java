@@ -9,27 +9,46 @@ e a quantidade de números impares.
 */
 public class Ex4_ParEImpar {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        int quantNumeros;
-        int numero;
-        int quantPares = 0, quantImpares = 0;
+        int quantidadeNumero = 0;
 
-        System.out.println("Quantidade de números: ");
-        quantNumeros = scan.nextInt();
+        System.out.println("Informe a quantidade de números desejados");
+        quantidadeNumero = scanner.nextInt();
 
-        int count = 0;
-        do {
-            System.out.println("Número: ");
-            numero = scan.nextInt();
+        int numero = quantidadeNumero;
+        int numeroSomar = 0 ;
+        int contador = 1;
+        int numeroPar = 0;
+        int numeroImpar = 0;
 
-            if (numero % 2 == 0 ) quantPares++;
-            else quantImpares++;
+       while(true) {
+            if (contador <= numero) {
+                System.out.println("informe o número de posição " + contador);
+                numeroSomar = scanner.nextInt();
+                contador ++;
+                if (numeroSomar % 2 == 0){
+                    numeroPar ++;
 
-            count++;
-        } while(count < quantNumeros);
+                }else{
+                    numeroImpar++;
+                }
 
-        System.out.println("Quantidade Par: " + quantPares);
-        System.out.println("Quantidade Ímpar: " + quantImpares);
+            }else{
+                System.out.println("fim dos números. ");
+
+                System.out.println("quantidade de numeros par: "+ numeroPar);
+
+                System.out.println("quantidade de numeros Impar: " + numeroImpar);
+                break;
+            }
+
+        }
+
+
+
+
+
+
     }
 }
