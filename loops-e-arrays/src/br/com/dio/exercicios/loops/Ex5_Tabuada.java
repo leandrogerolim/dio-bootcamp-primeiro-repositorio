@@ -17,14 +17,32 @@ Tabuada de 5:
 public class Ex5_Tabuada {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        int numeroInformado = 0;
+        int contador = 1;
+        System.out.println("informe qual numero da tabuada você deseja saber o intervalo deve ser entre 1 - 10");
+        numeroInformado = scan.nextInt();
 
-        System.out.println("Tabuada: ");
-        int tabuada = scan.nextInt();
 
-        System.out.println("Tabuada de " + tabuada);
-        for(int i = 1; i <= 10; i = i + 1) {
-            System.out.println(tabuada + " X " + i + " = " + (tabuada*i));
+        do {
+
+
+            if (numeroInformado <= 1 || numeroInformado >= 10) {
+                while (numeroInformado <= 1 || numeroInformado >= 10) {
+                    System.out.println("O número Informado é inválido digite novamente no intervalo entre 1-10: ");
+                    numeroInformado = scan.nextInt();
+                }
+            }
+            int valorTotal = contador * numeroInformado;
+
+            System.out.println(contador + " x " + numeroInformado + " = " + valorTotal);
+            contador++;
+
+        }while (contador <= 10) ;
+
+                System.out.println("Programa foi executado com sucesso! o número escolhido foi: " + numeroInformado);
+
         }
     }
 
-}
+
+
