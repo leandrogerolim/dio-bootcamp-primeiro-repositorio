@@ -1,4 +1,4 @@
-package one.digitalinnovation.basecamp;
+package Aula001.one.digitalinnovation.basecamp;
 
 public class Main {
 
