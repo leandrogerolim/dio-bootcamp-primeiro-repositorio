@@ -6,7 +6,12 @@
 * Mudar de canal;
 * Ligar e desligar a TV;
 
-**Lista de exercícios para praticar Arrays e Loops utilizando: **
+**Lista de exercícios para praticar Arrays e Loops utilizando:**
 *  Do e While ; 
-* For e Ifs;
+* For e Ifs else;
 * Arrays [];
+
+**Lista de exercícios para praticar Métodos utilizando:**
+* Criação de Métodos ; 
+* Sobrecarga;
+* Tipos de Retorno;
