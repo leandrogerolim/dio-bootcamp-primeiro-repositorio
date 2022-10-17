@@ -7,7 +7,7 @@ public class Mensagem {
 
 
     public static void obterMensagem(int hora) {
-
+//tambbém possivel de resolver através do If e e if else  if se o numero for <= que ...else
         switch (hora) {
             case 5:
             case 6:
@@ -44,9 +44,8 @@ public class Mensagem {
                 break;
         }
     }
-
     public static void mensagemBomDia() {
-        System.out.println("Bom dia!");
+        System.out.println("Bom dia!!! a hora informada foi: " + obterMensagem);
     }
 
     public static void mensagemBoaTarde() {
