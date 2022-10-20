@@ -44,7 +44,7 @@ Se a pessoa responder positivamente a 2 questões ela deve ser classificada como
 
         int count = 0;
         Iterator<String> contador = respostas.iterator(); //percorrer a lista
-        while(contador.hasNext()){ //percorre a lista e o has next manda ir para a proxima posição
+        while(contador.hasNext()){ //percorre a lista e o has next pergunta se tem um proximo  posição
             String resp = contador.next();
             if(resp.contains("s")) {  //caso na resp tenha a letras S o count soma + 1
                 count ++;
