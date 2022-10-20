@@ -10,16 +10,16 @@ public class Main {
         boolean fizzbuzz = fizz && buzz;
 
 
-        if (fizzbuzz == true ) {
+        if (fizzbuzz) {
             System.out.println("FizzBuzz");
 
 
         } else if
 
-        (buzz == true ) {
+        (buzz ) {
             System.out.println("Buzz");
 
-        }else if(fizz == true) {
+        }else if(fizz) {
             System.out.println("Fizz");
 
         }else {
