@@ -32,6 +32,10 @@ public class UsuarioRepository {
         System.out.println(String.format("GET/id - Recebendo o id: %d para localizar um usuário", id));
         return new Usuario("gleyson","password");
     }
+    public Usuario findByUsername(String username){
+        System.out.println(String.format("FIND/username - Recebendo o username: %s", username));
+        return new Usuario("frank","masterpass");
+    }
 
 }
 
