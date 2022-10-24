@@ -31,6 +31,7 @@ public class UsuarioController {
         repository.save(usuario);
 
     }
+
     @PutMapping()
     public void putUser(@RequestBody Usuario usuario){
         repository.save(usuario);
