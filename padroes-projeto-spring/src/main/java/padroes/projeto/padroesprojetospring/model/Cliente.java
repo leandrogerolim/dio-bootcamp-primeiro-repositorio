@@ -1,7 +1,7 @@
 package padroes.projeto.padroesprojetospring.model;
 
 import javax.persistence.*;
-
+@Entity
 public class Cliente {
 
     @Id
