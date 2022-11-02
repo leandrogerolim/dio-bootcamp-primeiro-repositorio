@@ -31,7 +31,6 @@ public class Main {
             n--;
         }
 
-
         System.out.println(res);
     }
 }
